@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1748899480 source:d:\facultad\c++\proyectos\proyecto integrador\main.cpp
+	<iostream>
+	"menu.h"
+
+1748899410 d:\facultad\c++\proyectos\proyecto integrador\menu.h
+
+1748899468 source:d:\facultad\c++\proyectos\proyecto integrador\menu.cpp
+	<iostream>
+	"menu.h"
+

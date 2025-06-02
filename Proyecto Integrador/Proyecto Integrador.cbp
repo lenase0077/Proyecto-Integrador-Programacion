@@ -32,7 +32,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="estadisticas.cpp" />
+		<Unit filename="estadisticas.h" />
+		<Unit filename="juego.cpp" />
+		<Unit filename="juego.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="menu.cpp" />
+		<Unit filename="menu.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
