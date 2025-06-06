@@ -8,33 +8,6 @@
 using namespace std;
 
 
-int tirarD6(){
-  for
-  return rand() % 6 + 1;
-}
-
-void generarTirada(int v[], int cant){
-  for(int i=0; i<cant; i++){
-    v[i] = tirarD6();
-  }
-}
-
-int QuienVaPrimero(){
-int tiradaJ1 = 0;
-int tiradaJ2 = 0;
-
-while(tiradaJ1 = tiradaJ2){
-    tiradaJC1 = tirarD6();
-    tiradaJC2 = tirarD6();
-}
-    if (tiradaJC1 > tiradaJC2){return 1;}
-    else{return 2;}
-}
-
-int generarNumeroObjetivo(){
-return rand() % 12 + 1;
-}
-
 int MainJuego(){
     int turno;
     int ContadorRondas = 0;

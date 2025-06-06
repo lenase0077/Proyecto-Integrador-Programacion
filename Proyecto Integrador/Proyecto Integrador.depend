@@ -14,3 +14,20 @@
 1749210494 source:d:\facultad\c++\proyectos\proyecto integrador\juego.cpp
 	<iostream>
 
+1749218011 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.cpp
+	<iostream>
+	"menu.h"
+
+1749218011 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\menu.h
+
+1749218011 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\menu.cpp
+	<iostream>
+	"menu.h"
+
+1749218011 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\main.cpp
+	<iostream>
+	"menu.h"
+
+1749218804 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
+	<iostream>
+
