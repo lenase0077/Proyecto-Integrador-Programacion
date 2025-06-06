@@ -16,6 +16,7 @@ cout << "0 - Salir" << endl;
 
 cout << "Eliga una opcion: " << endl;
 cin >> opcion;
+
 while(opcion <0 || opcion >2){
     cout << "Opcion incorrecta"<<endl;
     cout << "Opcion: ";
