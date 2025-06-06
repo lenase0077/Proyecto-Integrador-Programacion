@@ -2,6 +2,6 @@
 
 int OpcionesDeMenu();
 
-void ejecutarOpcionDeMenu(int opcion, int puntosMaximo);
+void ejecutarOpcionDeMenu(int opcion);
 
 
