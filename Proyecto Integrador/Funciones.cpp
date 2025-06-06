@@ -37,7 +37,7 @@ int quienVaPrimero() {
         cout << "El jugador 1 comienza" << endl << endl;
         return 0;
     } else {
-        cout << "El jugador 1 comienza" << endl << endl;
+        cout << "El jugador 2 comienza" << endl << endl;
         return 1;
     }
 };
