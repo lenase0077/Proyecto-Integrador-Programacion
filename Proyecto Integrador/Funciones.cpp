@@ -33,8 +33,13 @@ int quienVaPrimero() {
     cout << "Tirada para definir quien empieza:\n";
     cout << "Jugador 1 saco: " << dado1 << "\n";
     cout << "Jugador 2 saco: " << dado2 << "\n";
-
-    return (dado1 > dado2) ? 0 : 1;
+    if (dado1 > dado2) {
+        cout << "El jugador 1 comienza" << endl << endl;
+        return 0;
+    } else {
+        cout << "El jugador 1 comienza" << endl << endl;
+        return 1;
+    }
 };
 
 void mostrarTirada(int v[], int cant) {
