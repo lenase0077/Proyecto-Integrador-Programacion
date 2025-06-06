@@ -1,5 +1,6 @@
 # include<iostream>
 #include "menu.h"
+#include "juego.h"
 using namespace std;
 
 
@@ -23,13 +24,15 @@ while(opcion <0 || opcion >3){
 }
 return opcion;
 }
+
+
 ///Saltaron un par de errores y como todavia no tenemos nada hecho lo deje comenentado
 void ejecutarOpcionDeMenu(int opcion){
 switch(opcion)
 {
 case 1:
     cout << "juego xd";
-    ///Aca llamamos a la funcion de "juego" que tiene todo el tema dados
+    MainJuego();
     break;
 case 2:
     cout << "Estadisticas";
@@ -38,6 +41,7 @@ case 2:
 case 3:
     cout << "grupo 1 blabla";
     ///y aca es un cout con toda la info de los creditos: nombres numero de grupo legajos etc
+    break;
 case 0:
     cout << "¡Gracias por jugar!";
     break;

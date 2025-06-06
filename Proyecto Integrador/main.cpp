@@ -9,7 +9,7 @@ int main()
     do{
         system("cls");
         opcion = OpcionesDeMenu();
-        //ejecutarOpcionDeMenu(opcion, puntosMaximo);
+        ejecutarOpcionDeMenu(opcion);
         system("pause");
     }
     while(opcion != 0);
