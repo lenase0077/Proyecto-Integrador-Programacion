@@ -31,7 +31,6 @@ void ejecutarOpcionDeMenu(int opcion){
 switch(opcion)
 {
 case 1:
-    cout << "juego xd";
     MainJuego();
     break;
 case 2:

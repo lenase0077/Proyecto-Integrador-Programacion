@@ -7,3 +7,4 @@ void generarTirada(int v[], int cant);
 int generarNumeroObjetivo();
 int quienVaPrimero();
 void mostrarTirada(int v[], int cant);
+int SumarTirada (int v[], int cant, int& DadosSeleccionados);

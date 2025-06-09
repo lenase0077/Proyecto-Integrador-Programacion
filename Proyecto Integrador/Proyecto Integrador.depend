@@ -44,3 +44,33 @@
 
 1749220417 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\funciones.h
 
+1749217868 source:c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.cpp
+	<iostream>
+	"menu.h"
+
+1749210592 c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\menu.h
+
+1749482489 source:c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
+	<iostream>
+
+1749482367 source:c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\juego.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	"menu.h"
+	"funciones.h"
+
+1749482318 c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\funciones.h
+
+1749475372 source:c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\main.cpp
+	<iostream>
+	"menu.h"
+
+1749475700 source:c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\menu.cpp
+	<iostream>
+	"menu.h"
+	"juego.h"
+
+1749475372 c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\juego.h
+
