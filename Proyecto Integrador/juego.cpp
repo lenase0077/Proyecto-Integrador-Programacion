@@ -6,7 +6,7 @@
 #include "funciones.h"
 using namespace std;
 
-bool jugarTurno(string nombreJugador, int &stockJugador, int &stockOponente, int &puntajeJugador) {
+bool jugarTurno(string nombreJugador, int& stockJ1, int& stockJ2, int& puntajeJugador) {
     int dados[12];
     int numeroObjetivo = tirarDado12Caras() + tirarDado12Caras();
     int suma = 0;
@@ -15,22 +15,22 @@ bool jugarTurno(string nombreJugador, int &stockJugador, int &stockOponente, int
     cout << "Turno de " << nombreJugador << endl;
     cout << "Numero objetivo: " << numeroObjetivo << endl;
 
-    generarTirada(dados, stockJugador);
-    mostrarTirada(dados, stockJugador);
+    generarTirada(dados, stockJ1);
+    mostrarTirada(dados, stockJ1);
 
     cout << "Elija los resultados a sumar, estan enumerados comenzando del 1 por la izquierda. Ingresar 0 para finalizar el turno" << endl;
-    suma = SumarTirada(dados, stockJugador, dadosUsados);
+    suma = SumarTirada(dados, stockJ1, dadosUsados);
 
     if (suma == numeroObjetivo) {
         int puntosGanados = numeroObjetivo * dadosUsados;
         puntajeJugador += puntosGanados;
-        stockJugador -= dadosUsados;
-        stockOponente += dadosUsados;
+        stockJ1 -= dadosUsados;
+        stockJ2 += dadosUsados;
 
         cout << "Ganaste " << puntosGanados << " puntos." << endl;
         cout << "Transfieres " << dadosUsados << " dados al oponente." << endl;
 
-        if (stockJugador == 0) {
+        if (stockJ1 == 0) {
             cout << nombreJugador << " se quedó sin dados y gana automáticamente la partida!" << endl;
             puntajeJugador += 10000;
             return true; // Indica victoria automática
@@ -38,22 +38,23 @@ bool jugarTurno(string nombreJugador, int &stockJugador, int &stockOponente, int
     } else {
         cout << "No alcanzaste el numero objetivo." << endl;
 
-         if (stockOponente > 1)
+         if (stockJ2 > 1)
         {
-            stockJugador += 1;
-            stockOponente -= 1;
+            stockJ1 += 1;
+            stockJ2 -= 1;
             cout << nombreJugador << " recibe un dado del stock del contrincante" << endl;
         }
 
 
     }
 
-    cout << nombreJugador << ": " << stockJugador << " dados, " << puntajeJugador << " pts" << endl << endl;
+    cout << nombreJugador << ": " << stockJ1 << " dados, " << puntajeJugador << " pts" << endl << endl;
     return false;
 }
 
 
 int MainJuego() {
+    srand(time(0));
     int turno;
     int contadorRondas = 1;
     string nombreJ1, nombreJ2;
@@ -99,13 +100,6 @@ int MainJuego() {
         }
 
         contadorRondas++;
-
-        // Cambio de turno
-        if (turno == 0) {
-            turno = 1;
-        } else {
-            turno = 0;
-        }
     }
 
 

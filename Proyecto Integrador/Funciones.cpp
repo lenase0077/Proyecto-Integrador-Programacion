@@ -50,28 +50,11 @@ void mostrarTirada(int v[], int cant) {
     cout << endl;
 }
 
-/*int SumarTirada(int v[], int cant, int& DadosSeleccionados){
-    int eleccion = 0;
-    int contador = 0;
-     while (eleccion != -1){
-        cin >> eleccion;
-//        eleccion += -1;
-        contador += v[eleccion];
-        DadosSeleccionados++;
-        cout << contador << endl;
-    }
-//    DadosSeleccionados -= 1;
-    cout << DadosSeleccionados << endl;
-    return contador;
-}*/
-
 int SumarTirada(int v[], int cant, int& DadosSeleccionados) {
 int eleccion = 0;
 int contador = 0;
-
 while (true){
     cin >> eleccion;
-
     if (eleccion == 0){
         break;
     }
@@ -79,10 +62,9 @@ while (true){
     if (eleccion >= 0 && eleccion < cant){
         contador += v[eleccion];
         DadosSeleccionados++;
+        cout << "La suma actual es: " << contador << endl;
     } else {
         cout << "Te equivocaste gil" << endl;}
-
-
 }
     cout << "Dados seleccionados: " << DadosSeleccionados << endl;
     return contador;
