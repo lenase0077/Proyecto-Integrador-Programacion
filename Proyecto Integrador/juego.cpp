@@ -6,7 +6,7 @@
 #include "funciones.h"
 using namespace std;
 
-void jugarTurno(string nombreJugador, int &stockJugador, int &stockOponente, int &puntajeJugador) {
+bool jugarTurno(string nombreJugador, int &stockJugador, int &stockOponente, int &puntajeJugador) {
     int dados[12];
     int numeroObjetivo = tirarDado12Caras() + tirarDado12Caras();
     int suma = 0;
@@ -18,7 +18,7 @@ void jugarTurno(string nombreJugador, int &stockJugador, int &stockOponente, int
     generarTirada(dados, stockJugador);
     mostrarTirada(dados, stockJugador);
 
-    cout << "Eliga los resultados a sumar, estan enumerados comenzando del 1 por la izquierda. Ingresar 0 para finalizar el turno" << endl;
+    cout << "Elija los resultados a sumar, estan enumerados comenzando del 1 por la izquierda. Ingresar 0 para finalizar el turno" << endl;
     suma = SumarTirada(dados, stockJugador, dadosUsados);
 
     if (suma == numeroObjetivo) {
@@ -29,17 +29,18 @@ void jugarTurno(string nombreJugador, int &stockJugador, int &stockOponente, int
 
         cout << "Ganaste " << puntosGanados << " puntos." << endl;
         cout << "Transfieres " << dadosUsados << " dados al oponente." << endl;
+
+        if (stockJugador == 0) {
+            cout << nombreJugador << " se quedó sin dados y gana automáticamente la partida!" << endl;
+            puntajeJugador += 10000;
+            return true; // Indica victoria automática
+        }
     } else {
         cout << "No alcanzaste el numero objetivo." << endl;
-        if (stockOponente > 1)
-        {
-            stockJugador += 1;
-            stockOponente -= 1;
-            cout << nombreJugador << " recibe un dado del stock del contrincante" << endl;
-        }
     }
 
     cout << nombreJugador << ": " << stockJugador << " dados, " << puntajeJugador << " pts" << endl << endl;
+    return false;
 }
 
 
@@ -49,6 +50,7 @@ int MainJuego() {
     string nombreJ1, nombreJ2;
     int stockJ1 = 6, stockJ2 = 6;
     int puntajeJ1 = 0, puntajeJ2 = 0;
+    bool victoriaAutomatica = false;
 
     cout << "Introduzca el nombre del jugador 1: ";
     cin >> nombreJ1;
@@ -69,26 +71,35 @@ int MainJuego() {
         cout << endl << nombreJ1 << " comienza la partida." << endl;
         turno = 0;
     } else {
-        cout << endl<< nombreJ2 << " comienza la partida." << endl;
+        cout << endl << nombreJ2 << " comienza la partida." << endl;
         turno = 1;
     }
 
-    // Juego principal: hasta 3 rondas
-    while (contadorRondas <= 3) {
+    // Juego principal: hasta 3 rondas o victoria automática
+    while (contadorRondas <= 3 && !victoriaAutomatica) {
         cout << "Ronda " << contadorRondas << endl;
 
         if (turno == 0) {
-            jugarTurno(nombreJ1, stockJ1, stockJ2, puntajeJ1);
-            jugarTurno(nombreJ2, stockJ2, stockJ1, puntajeJ2);
+            victoriaAutomatica = jugarTurno(nombreJ1, stockJ1, stockJ2, puntajeJ1);
+            if (!victoriaAutomatica)
+                victoriaAutomatica = jugarTurno(nombreJ2, stockJ2, stockJ1, puntajeJ2);
         } else {
-            jugarTurno(nombreJ2, stockJ2, stockJ1, puntajeJ2);
-            jugarTurno(nombreJ1, stockJ1, stockJ2, puntajeJ1);
+            victoriaAutomatica = jugarTurno(nombreJ2, stockJ2, stockJ1, puntajeJ2);
+            if (!victoriaAutomatica)
+                victoriaAutomatica = jugarTurno(nombreJ1, stockJ1, stockJ2, puntajeJ1);
         }
 
         contadorRondas++;
+
+        // Cambio de turno
+        if (turno == 0) {
+            turno = 1;
+        } else {
+            turno = 0;
+        }
     }
 
-    // Resultado final
+
     cout << "Fin de la partida" << endl;
     cout << nombreJ1 << ": " << puntajeJ1 << " puntos" << endl;
     cout << nombreJ2 << ": " << puntajeJ2 << " puntos" << endl;
