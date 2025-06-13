@@ -38,8 +38,23 @@ case 2:
     ///Aca llamamos a una funcion de "estadisticas" que tiene todos los valores
     break;
 case 3:
-    cout << "grupo 1 blabla";
-    ///y aca es un cout con toda la info de los creditos: nombres numero de grupo legajos etc
+       cout << "================= INFORMACION DEL GRUPO =================" << endl;
+    cout << " " << endl;
+    cout << "                      [ Grupo 11 ] " << endl;
+    cout << " " << endl;
+    cout << "[ Nombre y apellido ]" << endl;
+    cout << "  Legajo:            [  ]" << endl;
+    cout << " " << endl;
+    cout << "[ Nombre y apellido ]" << endl;
+    cout << "  Legajo:            [  ]" << endl;
+    cout << " " << endl;
+    cout << "[ Nombre y apellido ]" << endl;
+    cout << "  Legajo:            [  ]" << endl;
+    cout << " " << endl;
+    cout << "[ Nombre y apellido ] " << endl;
+    cout << "  Legajo:            [  ] " << endl;;
+    cout << " " << endl;
+    cout << "=========================================================" << endl;
     break;
 case 0:
     cout << "¡Gracias por jugar!";
