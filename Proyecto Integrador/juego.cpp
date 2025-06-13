@@ -8,7 +8,7 @@ using namespace std;
 
 bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int& puntajeJugador) {
     int dados[12];
-    int numeroObjetivo = tirarDado12Caras() + tirarDado12Caras();
+    int numeroObjetivo = generarNumeroObjetivo();
     int suma = 0;
     int dadosUsados = 0;
 
