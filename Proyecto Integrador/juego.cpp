@@ -37,7 +37,7 @@ bool jugarTurno(string nombreJugador, int &stockJugador, int &stockOponente, int
         }
     } else {
         cout << "No alcanzaste el numero objetivo." << endl;
-        if (stockOponente > 1)
+         if (stockOponente > 1)
         {
             stockJugador += 1;
             stockOponente -= 1;
