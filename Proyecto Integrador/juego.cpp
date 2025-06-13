@@ -31,10 +31,16 @@ void jugarTurno(string nombreJugador, int &stockJugador, int &stockOponente, int
         cout << "Transfieres " << dadosUsados << " dados al oponente." << endl;
     } else {
         cout << "No alcanzaste el numero objetivo." << endl;
+        if (stockOponente > 1)
+        {
+            stockJugador += 1;
+            stockOponente -= 1;
+            cout << nombreJugador << " recibe un dado del stock del contrincante" << endl;
+        }
     }
 
     cout << nombreJugador << ": " << stockJugador << " dados, " << puntajeJugador << " pts" << endl << endl;
-};
+}
 
 
 int MainJuego() {

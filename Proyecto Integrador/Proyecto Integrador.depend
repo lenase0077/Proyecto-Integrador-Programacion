@@ -46,16 +46,16 @@
 
 1749727223 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\funciones.h
 
-1749217868 source:c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.cpp
+1749817858 source:c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.cpp
 	<iostream>
 	"menu.h"
 
 1749210592 c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\menu.h
 
-1749482489 source:c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
+1749815440 source:c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
 	<iostream>
 
-1749482367 source:c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\juego.cpp
+1749815690 source:c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\juego.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -74,5 +74,7 @@
 	"menu.h"
 	"juego.h"
 
-1749475372 c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\juego.h
+1749817858 c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\juego.h
+	<iostream>
+	<string>
 
