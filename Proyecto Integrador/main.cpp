@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+
     int opcion, puntosMaximo = 0;
 
     do{
