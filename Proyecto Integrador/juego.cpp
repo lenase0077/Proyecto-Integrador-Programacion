@@ -10,13 +10,14 @@ bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int
 
     system ("pause");
     system ("cls");
+
     int dados[12];
     int numeroObjetivo=0;
     int suma = 0;
     int dadosUsados = 0;
 
     cout << "Turno de " << nombreJugador << endl;
-    numeroObjetivo=generarNumeroObjetivo();
+    numeroObjetivo = generarNumeroObjetivo();
     cout << "Numero objetivo: " << numeroObjetivo << endl;
 
     generarTirada(dados, stockJugador);

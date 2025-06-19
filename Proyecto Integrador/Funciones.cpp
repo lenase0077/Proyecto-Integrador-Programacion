@@ -18,6 +18,7 @@ void generarTirada(int v[], int cant){
     v[i] = tirarDado6Caras();
   }
 }
+
 void jugadorGanador(string nombreJ1,string  nombreJ2, int puntajeJ1,int puntajeJ2,string &ganador,int &puntajeganador){
     cout << "Fin de la partida" << endl;
     cout << nombreJ1 << ": " << puntajeJ1 << " puntos" << endl;
@@ -53,33 +54,31 @@ void mostrarTirada(int v[], int cant) {
 }
 ///La hice de nuevo porque pide mostrar los dados tirados ademas de la suma.
 int generarNumeroObjetivo(){
-int vec[2];
-generarTirada(vec,2);
-mostrarTirada(vec,2);
-
-return vec[0]+ vec[1];
-
+    int vec[2];
+    generarTirada(vec,2);
+    mostrarTirada(vec,2);
+    return vec[0]+ vec[1];
 }
 
 
 int SumarTirada(int v[], int cant, int& DadosSeleccionados) {
-int eleccion = 0;
-int contador = 0;
-while (true){
-    cin >> eleccion;
-    if (eleccion == 0){
-        break;
+    int eleccion = 0;
+    int contador = 0;
+    while (true){
+        cin >> eleccion;
+        if (eleccion == 0){
+            break;
+        }
+        eleccion -= 1;
+        if (eleccion >= 0 && eleccion < cant){
+            contador += v[eleccion];
+            DadosSeleccionados++;
+            cout << "La suma actual es: " << contador << endl;
+        } else {
+            cout << "Te equivocaste gil" << endl;}
     }
-    eleccion -= 1;
-    if (eleccion >= 0 && eleccion < cant){
-        contador += v[eleccion];
-        DadosSeleccionados++;
-        cout << "La suma actual es: " << contador << endl;
-    } else {
-        cout << "Te equivocaste gil" << endl;}
-}
-    cout << "Dados seleccionados: " << DadosSeleccionados << endl;
-    return contador;
+        cout << "Dados seleccionados: " << DadosSeleccionados << endl;
+        return contador;
 }
 
 
