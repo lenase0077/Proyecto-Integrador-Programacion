@@ -68,9 +68,9 @@ int mayorpuntaje=0;
     bool victoriaAutomatica = false;
 
 
-    cout << "Introduzca el nombre del jugador 1: ";
+    cout << endl << "Introduzca el nombre del jugador 1: ";
     cin >> nombreJ1;
-    cout << "Introduzca el nombre del jugador 2: ";
+    cout << endl << "Introduzca el nombre del jugador 2: ";
     cin >> nombreJ2;
 
     // Decidir quien comienza
@@ -106,7 +106,7 @@ int mayorpuntaje=0;
         }
         contadorRondas++;
     }
-    jugadorGanador(nombreJ1, nombreJ2,puntajeJ1,puntajeJ2, ganador,puntajeganador);
+    jugadorGanador(nombreJ1, nombreJ2, puntajeJ1, puntajeJ2, ganador, puntajeganador);
      return 0;
 }
 

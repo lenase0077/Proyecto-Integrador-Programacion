@@ -14,29 +14,32 @@
 1749210494 source:d:\facultad\c++\proyectos\proyecto integrador\juego.cpp
 	<iostream>
 
-1749818582 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.cpp
+1750331911 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.cpp
 	<iostream>
 	"menu.h"
+	"estadisticas.h"
+	"juego.h"
 
-1749218011 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\menu.h
+1750331911 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\menu.h
 
-1749827118 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\menu.cpp
+1750331911 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\menu.cpp
 	<iostream>
 	"menu.h"
 	"juego.h"
+	"estadisticas.h"
 
-1749220074 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\main.cpp
+1750331911 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\main.cpp
 	<iostream>
 	"menu.h"
 
-1749823675 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
+1750331911 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
 	<iostream>
 
-1749731435 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\juego.h
+1750331911 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\juego.h
 	<iostream>
 	<string>
 
-1749826904 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\juego.cpp
+1750331911 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\juego.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
@@ -44,7 +47,7 @@
 	"menu.h"
 	"funciones.h"
 
-1749727223 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\funciones.h
+1750331911 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\funciones.h
 
 1749817858 source:c:\users\matia\documents\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.cpp
 	<iostream>
@@ -114,4 +117,6 @@
 	<string>
 
 1750320565 c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\estadisticas.h
+
+1750331911 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.h
 
