@@ -34,11 +34,13 @@ bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int
 
         cout << "Ganaste " << puntosGanados << " puntos." << endl;
         cout << "Transfieres " << dadosUsados << " dados al oponente." << endl;
+
             if (stockJugador == 0) {
                 cout << nombreJugador << " se quedo sin dados y gana automaticamente la partida!" << endl;
                 puntajeJugador += 10000;
                 return true; // Indica victoria automática
             }
+
         }
         else {
         cout << "No alcanzaste el numero objetivo." << endl;
@@ -50,17 +52,16 @@ bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int
             cout << nombreJugador << " recibe un dado del stock del contrincante" << endl;
         }
 
-
     }
-
     cout << nombreJugador << ": " << stockJugador << " dados, " << puntajeJugador << " pts" << endl << endl;
     return false;
 }
 
 
 int MainJuego(string &ganador, int &puntajeganador) {
-int mayorpuntaje=0;
+
     srand(time(0));
+    int mayorpuntaje=0;
     int turno;
     int contadorRondas = 1;
     string nombreJ1, nombreJ2;
@@ -70,9 +71,10 @@ int mayorpuntaje=0;
 
 
     cout << endl << "Introduzca el nombre del jugador 1: ";
-    cin >> nombreJ1;
+    cin.ignore();
+    getline(cin, nombreJ1);
     cout << endl << "Introduzca el nombre del jugador 2: ";
-    cin >> nombreJ2;
+    getline(cin, nombreJ2);
 
     // Decidir quien comienza
     int dado1, dado2;
@@ -94,8 +96,8 @@ int mayorpuntaje=0;
 
     // Juego principal: hasta 3 rondas o victoria automatica
     while (contadorRondas <= 3 && !victoriaAutomatica) {
-        cout << "Ronda " << contadorRondas << endl;
 
+        cout << "Ronda " << contadorRondas << endl;
         if (turno == 0) {
             victoriaAutomatica = jugarTurno(nombreJ1, stockJ1, stockJ2, puntajeJ1);
             if (!victoriaAutomatica)
@@ -107,6 +109,8 @@ int mayorpuntaje=0;
         }
         contadorRondas++;
     }
+    system ("pause");
+    system ("cls");
     jugadorGanador(nombreJ1, nombreJ2, puntajeJ1, puntajeJ2, ganador, puntajeganador);
      return 0;
 }

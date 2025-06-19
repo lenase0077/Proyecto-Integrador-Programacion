@@ -33,13 +33,19 @@ void ejecutarOpcionDeMenu(int opcion, string &ganador,int &puntajeganador){
 switch(opcion)
 {
 case 1:
+
+    system ("cls");
     MainJuego(ganador,puntajeganador);
     break;
 case 2:
+
+    system ("cls");
     cout << "Estadisticas" << endl;
     estadisticas(ganador,puntajeganador);
     break;
 case 3:
+
+    system ("cls");
     cout << "================= INFORMACION DEL GRUPO =================" << endl;
     cout << " " << endl;
     cout << "[ Grupo 11 ] " << endl;

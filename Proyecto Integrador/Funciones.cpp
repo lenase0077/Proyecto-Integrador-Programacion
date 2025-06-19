@@ -21,28 +21,30 @@ void generarTirada(int v[], int cant){
 
 void jugadorGanador(string nombreJ1,string  nombreJ2, int puntajeJ1,int puntajeJ2,string &ganador,int &puntajeganador){
     cout << "Fin de la partida" << endl;
-    cout << nombreJ1 << ": " << puntajeJ1 << " puntos" << endl;
-    cout << nombreJ2 << ": " << puntajeJ2 << " puntos" << endl;
+    cout << nombreJ1 << ": genero" << puntajeJ1 << " puntos" << endl;
+    cout << nombreJ2 << ": genero" << puntajeJ2 << " puntos" << endl;
 
     if (puntajeJ1 > puntajeJ2) {
-        cout << "Gana " << nombreJ1 << "!" << endl;
+        cout << "Gana el jugador" << nombreJ1 << "!" << endl;
         ganador=nombreJ1;
         puntajeganador=puntajeJ1;
+
     } else if (puntajeJ2 > puntajeJ1) {
-        cout << "Gana " << nombreJ2 << "!" << endl;
+        cout << "Gana el jugador " << nombreJ2 << "!" << endl;
        ganador=nombreJ2;
        puntajeganador=puntajeJ2;
+
     } else {
         cout << "Empate" << endl;
         puntajeganador=-1;
     }
 }
+
 /* int generarNumeroObjetivo() {
 
     return tirarDado12Caras() + tirarDado12Caras(); // suma de 2 dados de 12 caras
 }
 */
-
 
 
 void mostrarTirada(int v[], int cant) {
@@ -64,6 +66,8 @@ int generarNumeroObjetivo(){
 int SumarTirada(int v[], int cant, int& DadosSeleccionados) {
     int eleccion = 0;
     int contador = 0;
+    bool usados[12] = {false};
+
     while (true){
         cin >> eleccion;
         if (eleccion == 0){
@@ -71,9 +75,13 @@ int SumarTirada(int v[], int cant, int& DadosSeleccionados) {
         }
         eleccion -= 1;
         if (eleccion >= 0 && eleccion < cant){
-            contador += v[eleccion];
-            DadosSeleccionados++;
-            cout << "La suma actual es: " << contador << endl;
+            if (usados[eleccion]== false){
+                contador += v[eleccion];
+                DadosSeleccionados++;
+                usados[eleccion] = true;
+                cout << "La suma actual es: " << contador << endl;
+            } else {cout << "Ya usaste este dado, TRAMPOSO!" << endl;}
+
         } else {
             cout << "Te equivocaste gil" << endl;}
     }
