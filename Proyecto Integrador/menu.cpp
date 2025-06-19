@@ -1,6 +1,7 @@
 # include<iostream>
 #include "menu.h"
 #include "juego.h"
+#include "estadisticas.h"
 using namespace std;
 
 
@@ -27,15 +28,16 @@ return opcion;
 
 
 ///Saltaron un par de errores y como todavia no tenemos nada hecho lo deje comenentado
-void ejecutarOpcionDeMenu(int opcion){
+void ejecutarOpcionDeMenu(int opcion, string &ganador,int &puntajeganador){
+
 switch(opcion)
 {
 case 1:
-    MainJuego();
+    MainJuego(ganador,puntajeganador);
     break;
 case 2:
-    cout << "Estadisticas";
-    ///Aca llamamos a una funcion de "estadisticas" que tiene todos los valores
+    cout << "Estadisticas" << endl;
+    estadisticas(ganador,puntajeganador);
     break;
 case 3:
     cout << "================= INFORMACION DEL GRUPO =================" << endl;
@@ -45,13 +47,13 @@ case 3:
     cout << "[ Leandro Serrano ]" << endl;
     cout << "  Legajo:            [ 33.111 ]" << endl;
     cout << " " << endl;
-    cout << "[ Nombre y apellido ]" << endl;
+    cout << "[ Julieta Rodriguez ]" << endl;
+    cout << "  Legajo:            [ 32.487 ]" << endl;
+    cout << " " << endl;
+    cout << "[ Mat¡as Candia Butvilofsky ]" << endl;
     cout << "  Legajo:            [  ]" << endl;
     cout << " " << endl;
-    cout << "[ Nombre y apellido ]" << endl;
-    cout << "  Legajo:            [  ]" << endl;
-    cout << " " << endl;
-    cout << "[ Nombre y apellido ] " << endl;
+    cout << "[ Fernando Raul Monz¢n ] " << endl;
     cout << "  Legajo:            [  ] " << endl;;
     cout << " " << endl;
     cout << "=========================================================" << endl;

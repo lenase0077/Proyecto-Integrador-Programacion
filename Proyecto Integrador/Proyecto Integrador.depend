@@ -78,3 +78,40 @@
 	<iostream>
 	<string>
 
+1750320834 source:c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\estadisticas.cpp
+	<iostream>
+	"menu.h"
+	"estadisticas.h"
+	"juego.h"
+
+1750321587 c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\menu.h
+
+1750320362 source:c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
+	<iostream>
+
+1750321885 source:c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\juego.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	"menu.h"
+	"funciones.h"
+
+1750319717 c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\funciones.h
+
+1750321496 source:c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\main.cpp
+	<iostream>
+	"menu.h"
+
+1750321496 source:c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\menu.cpp
+	<iostream>
+	"menu.h"
+	"juego.h"
+	"estadisticas.h"
+
+1750321672 c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\juego.h
+	<iostream>
+	<string>
+
+1750320565 c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\estadisticas.h
+

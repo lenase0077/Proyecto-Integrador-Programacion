@@ -1,8 +1,5 @@
 #pragma once
 
-#ifndef ESTADISTICAS_H_INCLUDED
-#define ESTADISTICAS_H_INCLUDED
+using namespace std;
 
-
-
-#endif // ESTADISTICAS_H_INCLUDED
+void estadisticas (string &ganador,int &puntajeganador);

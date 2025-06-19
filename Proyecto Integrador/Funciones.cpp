@@ -18,29 +18,31 @@ void generarTirada(int v[], int cant){
     v[i] = tirarDado6Caras();
   }
 }
+void jugadorGanador(string nombreJ1,string  nombreJ2, int puntajeJ1,int puntajeJ2,string &ganador,int &puntajeganador){
+    cout << "Fin de la partida" << endl;
+    cout << nombreJ1 << ": " << puntajeJ1 << " puntos" << endl;
+    cout << nombreJ2 << ": " << puntajeJ2 << " puntos" << endl;
 
-int generarNumeroObjetivo() {
+    if (puntajeJ1 > puntajeJ2) {
+        cout << "Gana " << nombreJ1 << "!" << endl;
+        ganador=nombreJ1;
+        puntajeganador=puntajeJ1;
+    } else if (puntajeJ2 > puntajeJ1) {
+        cout << "Gana " << nombreJ2 << "!" << endl;
+       ganador=nombreJ2;
+       puntajeganador=puntajeJ2;
+    } else {
+        cout << "Empate" << endl;
+        puntajeganador=-1;
+    }
+}
+/* int generarNumeroObjetivo() {
+
     return tirarDado12Caras() + tirarDado12Caras(); // suma de 2 dados de 12 caras
 }
+*/
 
-/*int quienVaPrimero() {
-    int dado1, dado2;
-    do {
-        dado1 = tirarDado6Caras();
-        dado2 = tirarDado6Caras();
-    } while (dado1 == dado2);
 
-    cout << endl << "Tirada para definir quien empieza:\n";
-    cout << "Jugador 1 saco: " << dado1 << "\n";
-    cout << "Jugador 2 saco: " << dado2 << "\n";
-    if (dado1 > dado2) {
-        cout << "El jugador 1 comienza" << endl << endl << endl;
-        return 0;
-    } else {
-        cout << "El jugador 2 comienza" << endl << endl << endl;
-        return 1;
-    }
-}*/
 
 void mostrarTirada(int v[], int cant) {
     cout << "Tirada: ";
@@ -49,6 +51,16 @@ void mostrarTirada(int v[], int cant) {
     }
     cout << endl;
 }
+///La hice de nuevo porque pide mostrar los dados tirados ademas de la suma.
+int generarNumeroObjetivo(){
+int vec[2];
+generarTirada(vec,2);
+mostrarTirada(vec,2);
+
+return vec[0]+ vec[1];
+
+}
+
 
 int SumarTirada(int v[], int cant, int& DadosSeleccionados) {
 int eleccion = 0;
