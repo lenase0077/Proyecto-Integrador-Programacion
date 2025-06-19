@@ -83,7 +83,7 @@ int SumarTirada(int v[], int cant, int& DadosSeleccionados) {
             } else {cout << "Ya usaste este dado, TRAMPOSO!" << endl;}
 
         } else {
-            cout << "Te equivocaste gil" << endl;}
+            cout << "No tenes tantos dados -.- Elegi nuevamente." << endl;}
     }
         cout << "Dados seleccionados: " << DadosSeleccionados << endl;
         return contador;

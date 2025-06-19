@@ -10,7 +10,6 @@ bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int
 
     system ("pause");
     system ("cls");
-
     int dados[12];
     int numeroObjetivo=0;
     int suma = 0;
@@ -60,7 +59,7 @@ bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int
 
 int MainJuego(string &ganador, int &puntajeganador) {
 
-    srand(time(0));
+
     int mayorpuntaje=0;
     int turno;
     int contadorRondas = 1;

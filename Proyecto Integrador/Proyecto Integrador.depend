@@ -14,7 +14,7 @@
 1749210494 source:d:\facultad\c++\proyectos\proyecto integrador\juego.cpp
 	<iostream>
 
-1750335661 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.cpp
+1750337164 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.cpp
 	<iostream>
 	"menu.h"
 	"estadisticas.h"
@@ -28,18 +28,19 @@
 	"juego.h"
 	"estadisticas.h"
 
-1750331911 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\main.cpp
+1750337304 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\main.cpp
 	<iostream>
 	"menu.h"
+	<ctime>
 
-1750335661 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
+1750336437 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
 	<iostream>
 
 1750331911 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\juego.h
 	<iostream>
 	<string>
 
-1750335828 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\juego.cpp
+1750337304 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\juego.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
