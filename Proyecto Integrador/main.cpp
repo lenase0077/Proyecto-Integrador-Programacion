@@ -1,6 +1,7 @@
 #include <iostream>
 #include "menu.h"
 #include <ctime>
+#include "rlutil.h"
 using namespace std;
 
 int main(){
@@ -17,6 +18,7 @@ int main(){
             system("pause");
         }
         while(opcion != 0);
+
 
         return 0;
     }

@@ -44,14 +44,14 @@ void jugadorGanador(string nombreJ1,string  nombreJ2, int puntajeJ1,int puntajeJ
     }
 }
 void titilar(string &ganador, int x, int y,int &puntajeganador){
-for (int i=1;i<20;i++){
+for (int i=1;i<10;i++){
 
     if(i%2==0){
         rlutil::setColor(rlutil::GREEN);
         rlutil::setBackgroundColor(rlutil::WHITE);
 
     }
-    else{
+   else{
        rlutil::setColor(rlutil::WHITE);
         rlutil::setBackgroundColor(rlutil::GREEN);
     }
@@ -65,6 +65,7 @@ for (int i=1;i<20;i++){
     }
     rlutil::msleep(110);
 }
+rlutil::setBackgroundColor(rlutil::BLACK);
 }
 
 void mostrarTirada(int v[], int cant) {
