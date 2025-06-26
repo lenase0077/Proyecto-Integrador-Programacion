@@ -6,7 +6,7 @@
 #include "funciones.h"
 using namespace std;
 
-bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int& puntajeJugador) {
+bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int& puntajeJugador, int ronda) {
 
     system ("pause");
     system ("cls");
@@ -15,11 +15,14 @@ bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int
     int suma = 0;
     int dadosUsados = 0;
 
+    cout << "------ Ronda " << ronda << " ------" << endl << endl;
     cout << "Turno de " << nombreJugador << endl;
+    cout << "Generando tirada objetivo" << endl;
     numeroObjetivo = generarNumeroObjetivo();
-    cout << "Numero objetivo: " << numeroObjetivo << endl;
+    cout << "Numero objetivo: " << numeroObjetivo << endl << endl;
 
     generarTirada(dados, stockJugador);
+    cout << "Generando tirada de Dados" << endl;
     mostrarTirada(dados, stockJugador);
 
     cout << "Elija los dados a sumar, estan enumerados comenzando del 1 por la izquierda. Ingresar 0 para finalizar el turno" << endl;
@@ -86,25 +89,24 @@ int MainJuego(string &ganador, int &puntajeganador) {
     cout << endl << nombreJ2 << " tira: " << dado2 << endl;
 
     if (dado1 > dado2) {
-        cout << endl << nombreJ1 << " Comienza la partida:" << endl;
+        cout << endl << "El jugador " << nombreJ1 << " Comienza la partida:" << endl;
         turno = 0;
     } else {
-        cout << endl << nombreJ2 << " Comienza la partida:" << endl;
+        cout << endl << "El jugador " << nombreJ2 << " Comienza la partida:" << endl;
         turno = 1;
     }
 
     // Juego principal: hasta 3 rondas o victoria automatica
     while (contadorRondas <= 3 && victoriaAutomatica == false) {
 
-        cout << "Ronda " << contadorRondas << endl;
         if (turno == 0) {
-            victoriaAutomatica = jugarTurno(nombreJ1, stockJ1, stockJ2, puntajeJ1);
+            victoriaAutomatica = jugarTurno(nombreJ1, stockJ1, stockJ2, puntajeJ1, contadorRondas);
             if (!victoriaAutomatica)
-                victoriaAutomatica = jugarTurno(nombreJ2, stockJ2, stockJ1, puntajeJ2);
+                victoriaAutomatica = jugarTurno(nombreJ2, stockJ2, stockJ1, puntajeJ2, contadorRondas);
         } else {
-            victoriaAutomatica = jugarTurno(nombreJ2, stockJ2, stockJ1, puntajeJ2);
+            victoriaAutomatica = jugarTurno(nombreJ2, stockJ2, stockJ1, puntajeJ2, contadorRondas);
             if (!victoriaAutomatica)
-                victoriaAutomatica = jugarTurno(nombreJ1, stockJ1, stockJ2, puntajeJ1);
+                victoriaAutomatica = jugarTurno(nombreJ1, stockJ1, stockJ2, puntajeJ1, contadorRondas);
         }
         contadorRondas++;
     }

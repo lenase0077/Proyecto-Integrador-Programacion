@@ -22,7 +22,7 @@
 
 1750331911 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\menu.h
 
-1750335731 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\menu.cpp
+1750945469 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\menu.cpp
 	<iostream>
 	"menu.h"
 	"juego.h"
@@ -33,14 +33,14 @@
 	"menu.h"
 	<ctime>
 
-1750941145 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
+1750945469 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
 	<iostream>
 
 1750331911 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\juego.h
 	<iostream>
 	<string>
 
-1750943108 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\juego.cpp
+1750947348 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\juego.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>

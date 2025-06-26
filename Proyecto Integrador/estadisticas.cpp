@@ -16,6 +16,6 @@ void estadisticas (string& ganador, int& puntajeganador) {
     }
 
     else {
-        cout << "La última partida terminó en empate entre ambos jugadores." << endl;
+        cout << "La ultima partida terminó en empate entre ambos jugadores." << endl;
     }
 }
