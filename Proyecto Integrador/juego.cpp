@@ -35,6 +35,7 @@ bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int
         cout << "Transfieres " << dadosUsados << " dados al oponente." << endl;
 
             if (stockJugador == 0) {
+                system ("cls");
                 cout << "El jugador " << nombreJugador << " se quedo sin dados y gana automaticamente la partida!" << endl;
                 puntajeJugador += 10000;
                 return true; // Indica victoria automática
