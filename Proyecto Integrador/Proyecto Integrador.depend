@@ -28,7 +28,7 @@
 	"juego.h"
 	"estadisticas.h"
 
-1750337304 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\main.cpp
+1750943175 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\main.cpp
 	<iostream>
 	"menu.h"
 	<ctime>
@@ -40,7 +40,7 @@
 	<iostream>
 	<string>
 
-1750941773 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\juego.cpp
+1750943108 source:c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\juego.cpp
 	<iostream>
 	<cstdlib>
 	<cstdio>
