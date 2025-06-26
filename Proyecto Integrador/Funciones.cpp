@@ -48,7 +48,7 @@ void mostrarTirada(int v[], int cant) {
     }
     cout << endl;
 }
-///La hice de nuevo porque pide mostrar los dados tirados ademas de la suma.
+
 int generarNumeroObjetivo(){
     int vec[2];
     generarTirada(vec,2);

@@ -9,6 +9,17 @@ using namespace std;
 int OpcionesDeMenu(){
 
 int opcion;
+
+cout << " _____  _   _ ______ ______  _____  _   _  _____   ___  ______  _____  _____ " << endl;
+cout << "|  ___|| \\ | ||  ___|| ___ \\|  ___|| \\ | ||_   _| / _ \\ |  _  \\|  _  |/  ___|" << endl;
+cout << "| |__  |  \\| || |_   | |_/ /| |__  |  \\| |  | |  / /_\\ \\| | | || | | |\\ `--. " << endl;
+cout << "|  __| | . ` ||  _|  |    / |  __| | . ` |  | |  |  _  || | | || | | | `--. \\" << endl;
+cout << "| |___ | |\\  || |    | |\\ \\ | |___ | |\\  |  | |  | | | || |/ / \\ \\_/ //\\__/ /" << endl;
+cout << "\\____/ |_| \\_/\\_|    \\_| \\_|\\____/ |_| \\_/  \\_/  \\_| |_/|___/   \\___/ \\____/ " << endl;
+cout << endl << endl << endl;
+
+
+
 cout << "------ Menu Principal ------" << endl;
 cout << "1 - Jugar" << endl;
 cout << "2 - Tabla de Estadisticas" << endl;
@@ -27,7 +38,6 @@ return opcion;
 }
 
 
-///Saltaron un par de errores y como todavia no tenemos nada hecho lo deje comenentado
 void ejecutarOpcionDeMenu(int opcion, string &ganador,int &puntajeganador){
 
 switch(opcion)
@@ -67,7 +77,7 @@ case 3:
 case 0:
     cout << "¡Gracias por jugar!";
     break;
-}
+    }
 }
 
 
