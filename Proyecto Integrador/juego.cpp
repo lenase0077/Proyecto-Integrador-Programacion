@@ -4,6 +4,7 @@
 #include <ctime>
 #include "menu.h"
 #include "funciones.h"
+#include "rlutil.h"
 using namespace std;
 
 bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int& puntajeJugador, int ronda) {
@@ -115,6 +116,9 @@ int MainJuego(string &ganador, int &puntajeganador) {
     system ("cls");
 
     jugadorGanador(nombreJ1, nombreJ2, puntajeJ1, puntajeJ2, ganador, puntajeganador);
+    rlutil::hidecursor();
+    titilar(ganador,52,15,puntajeganador);
+    cout << endl;
     return 0;
 }
 

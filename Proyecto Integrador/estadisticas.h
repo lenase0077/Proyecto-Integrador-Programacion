@@ -1,5 +1,5 @@
 #pragma once
 
-using namespace std;
+///using namespace std;
 
-void estadisticas (string &ganador,int &puntajeganador);
+void estadisticas (std::string &ganador,int &puntajeganador);

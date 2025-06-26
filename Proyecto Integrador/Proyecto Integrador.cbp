@@ -34,6 +34,8 @@
 		</Compiler>
 		<Unit filename="Funciones.cpp" />
 		<Unit filename="Funciones.h" />
+		<Unit filename="dados.cpp" />
+		<Unit filename="dados.h" />
 		<Unit filename="estadisticas.cpp" />
 		<Unit filename="estadisticas.h" />
 		<Unit filename="juego.cpp" />
@@ -41,6 +43,7 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="menu.cpp" />
 		<Unit filename="menu.h" />
+		<Unit filename="rlutil.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

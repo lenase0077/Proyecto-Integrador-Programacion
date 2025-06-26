@@ -2,6 +2,7 @@
 #include "menu.h"
 #include "juego.h"
 #include "estadisticas.h"
+#include "rlutil.h"
 using namespace std;
 
 
@@ -9,7 +10,7 @@ using namespace std;
 int OpcionesDeMenu(){
 
 int opcion;
-
+rlutil::setColor(rlutil::YELLOW);
 cout << " _____  _   _ ______ ______  _____  _   _  _____   ___  ______  _____  _____ " << endl;
 cout << "|  ___|| \\ | ||  ___|| ___ \\|  ___|| \\ | ||_   _| / _ \\ |  _  \\|  _  |/  ___|" << endl;
 cout << "| |__  |  \\| || |_   | |_/ /| |__  |  \\| |  | |  / /_\\ \\| | | || | | |\\ `--. " << endl;

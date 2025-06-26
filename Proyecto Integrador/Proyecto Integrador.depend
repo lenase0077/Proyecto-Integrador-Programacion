@@ -160,3 +160,67 @@
 	"juego.h"
 	"estadisticas.h"
 
+1750957540 source:c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\nueva carpeta\proyecto-integrador-programacion\proyecto integrador\estadisticas.cpp
+	<iostream>
+	"menu.h"
+	"estadisticas.h"
+	"juego.h"
+	"funciones.h"
+
+1750958754 c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\nueva carpeta\proyecto-integrador-programacion\proyecto integrador\menu.h
+
+1750958754 c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\nueva carpeta\proyecto-integrador-programacion\proyecto integrador\estadisticas.h
+
+1750965929 c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\nueva carpeta\proyecto-integrador-programacion\proyecto integrador\juego.h
+	<iostream>
+	<string>
+
+1750965908 c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\nueva carpeta\proyecto-integrador-programacion\proyecto integrador\funciones.h
+
+1750966155 source:c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\nueva carpeta\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
+	<iostream>
+	"rlutil.h"
+	"dados.h"
+
+1750966506 source:c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\nueva carpeta\proyecto-integrador-programacion\proyecto integrador\juego.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	"menu.h"
+	"funciones.h"
+	"rlutil.h"
+
+1750957540 source:c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\nueva carpeta\proyecto-integrador-programacion\proyecto integrador\main.cpp
+	<iostream>
+	"menu.h"
+	<ctime>
+
+1750966286 source:c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\nueva carpeta\proyecto-integrador-programacion\proyecto integrador\menu.cpp
+	<iostream>
+	"menu.h"
+	"juego.h"
+	"estadisticas.h"
+	"rlutil.h"
+
+1750943925 c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\nueva carpeta\proyecto-integrador-programacion\proyecto integrador\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1750964212 source:c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\nueva carpeta\proyecto-integrador-programacion\proyecto integrador\dados.cpp
+	<iostream>
+	"rlutil.h"
+	"dados.h"
+
+1750964033 c:\users\julie\desktop\programacion\tp\proyecto-integrador-programacion\proyecto-integrador-programacion\proyecto integrador\nueva carpeta\proyecto-integrador-programacion\proyecto integrador\dados.h
+

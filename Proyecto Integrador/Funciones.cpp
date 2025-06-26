@@ -1,8 +1,10 @@
 #include <iostream>
+#include "rlutil.h"
+#include "dados.h"
 using namespace std;
 
 int tirarDado6Caras(){
-  return rand() % 6 + 1;
+    return rand() % 6 + 1;
 }
 
 int tirarDado12Caras(){
@@ -14,8 +16,9 @@ int tirarDado2Caras(){
 }
 
 void generarTirada(int v[], int cant){
-  for(int i=0; i<cant; i++){
+for(int i=0; i<cant; i++){
     v[i] = tirarDado6Caras();
+
   }
 }
 
@@ -26,21 +29,43 @@ void jugadorGanador(string nombreJ1,string  nombreJ2, int puntajeJ1,int puntajeJ
     cout << "El jugador " << nombreJ2 << ": genero " << puntajeJ2 << " puntos" << endl;
 
     if (puntajeJ1 > puntajeJ2) {
-        cout << "Gana el jugador " << nombreJ1 << "!" << endl;
+        //cout << "Gana el jugador " << nombreJ1 << "!" << endl;
         ganador = nombreJ1;
         puntajeganador = puntajeJ1;
 
     } else if (puntajeJ2 > puntajeJ1) {
-        cout << "Gana el jugador " << nombreJ2 << "!" << endl;
+       // cout << "Gana el jugador " << nombreJ2 << "!" << endl;
        ganador = nombreJ2;
        puntajeganador = puntajeJ2;
 
     } else {
-        cout << "Empate" << endl;
+        //cout << "Empate" << endl;
         puntajeganador=-1;
     }
 }
+void titilar(string &ganador, int x, int y,int &puntajeganador){
+for (int i=1;i<20;i++){
 
+    if(i%2==0){
+        rlutil::setColor(rlutil::GREEN);
+        rlutil::setBackgroundColor(rlutil::WHITE);
+
+    }
+    else{
+       rlutil::setColor(rlutil::WHITE);
+        rlutil::setBackgroundColor(rlutil::GREEN);
+    }
+
+    rlutil::locate(x,y);
+    if(puntajeganador == -1){
+    cout << "­NO HUBO GANADOR!";
+    }
+    else {
+    cout << "GANASTEEEEE " << ganador;
+    }
+    rlutil::msleep(110);
+}
+}
 
 void mostrarTirada(int v[], int cant) {
     cout << "Tirada: ";
