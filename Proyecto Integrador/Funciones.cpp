@@ -50,10 +50,10 @@ void mostrarTirada(int v[], int cant) {
 }
 
 int generarNumeroObjetivo(){
-    int vec[2];
-    generarTirada(vec,2);
-    mostrarTirada(vec,2);
-    return vec[0]+ vec[1];
+    int dado1 = tirarDado12Caras();
+    int dado2 = tirarDado12Caras();
+    cout << dado1 << " + " << dado2 << endl;
+    return dado1 + dado2;
 }
 
 
