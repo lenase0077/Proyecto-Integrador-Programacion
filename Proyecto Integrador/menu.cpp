@@ -57,10 +57,10 @@ case 3:
     cout << "  Legajo:            [ 32.487 ]" << endl;
     cout << " " << endl;
     cout << "[ Mat¡as Candia Butvilofsky ]" << endl;
-    cout << "  Legajo:            [  ]" << endl;
+    cout << "  Legajo:            [ 32.699 ]" << endl;
     cout << " " << endl;
     cout << "[ Fernando Raul Monz¢n ] " << endl;
-    cout << "  Legajo:            [  ] " << endl;;
+    cout << "  Legajo:            [ 32.519 ] " << endl;;
     cout << " " << endl;
     cout << "=========================================================" << endl;
     break;

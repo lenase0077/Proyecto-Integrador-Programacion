@@ -121,3 +121,41 @@
 
 1750331911 c:\users\leand\onedrive\documentos\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.h
 
+1750942222 source:c:\users\fercho\documents\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.cpp
+	<iostream>
+	"menu.h"
+	"estadisticas.h"
+	"juego.h"
+
+1750942222 c:\users\fercho\documents\github\proyecto-integrador-programacion\proyecto integrador\menu.h
+
+1750942222 c:\users\fercho\documents\github\proyecto-integrador-programacion\proyecto integrador\estadisticas.h
+
+1750942222 c:\users\fercho\documents\github\proyecto-integrador-programacion\proyecto integrador\juego.h
+	<iostream>
+	<string>
+
+1750943033 source:c:\users\fercho\documents\github\proyecto-integrador-programacion\proyecto integrador\funciones.cpp
+	<iostream>
+
+1750943033 source:c:\users\fercho\documents\github\proyecto-integrador-programacion\proyecto integrador\juego.cpp
+	<iostream>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	"menu.h"
+	"funciones.h"
+
+1750942326 c:\users\fercho\documents\github\proyecto-integrador-programacion\proyecto integrador\funciones.h
+
+1750942597 source:c:\users\fercho\documents\github\proyecto-integrador-programacion\proyecto integrador\main.cpp
+	<iostream>
+	"menu.h"
+	<ctime>
+
+1750943161 source:c:\users\fercho\documents\github\proyecto-integrador-programacion\proyecto integrador\menu.cpp
+	<iostream>
+	"menu.h"
+	"juego.h"
+	"estadisticas.h"
+
