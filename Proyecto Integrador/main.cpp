@@ -7,8 +7,8 @@ int main(){
 
     srand(time(0));
     string ganador;
-    int puntajeganador;
-        int opcion, puntosMaximo = 0;
+    int puntajeganador = 0;
+    int opcion;
 
         do{
             system("cls");

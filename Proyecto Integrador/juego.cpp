@@ -61,7 +61,6 @@ bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int
 int MainJuego(string &ganador, int &puntajeganador) {
 
 
-    int mayorpuntaje=0;
     int turno;
     int contadorRondas = 1;
     string nombreJ1, nombreJ2;
