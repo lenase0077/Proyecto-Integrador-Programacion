@@ -40,12 +40,6 @@ void jugadorGanador(string nombreJ1,string  nombreJ2, int puntajeJ1,int puntajeJ
     }
 }
 
-/* int generarNumeroObjetivo() {
-
-    return tirarDado12Caras() + tirarDado12Caras(); // suma de 2 dados de 12 caras
-}
-*/
-
 
 void mostrarTirada(int v[], int cant) {
     cout << "Tirada: ";
