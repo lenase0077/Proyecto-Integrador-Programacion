@@ -35,7 +35,7 @@ bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int
         cout << "Transfieres " << dadosUsados << " dados al oponente." << endl;
 
             if (stockJugador == 0) {
-                cout << nombreJugador << " se quedo sin dados y gana automaticamente la partida!" << endl;
+                cout << "El jugador " << nombreJugador << " se quedo sin dados y gana automaticamente la partida!" << endl;
                 puntajeJugador += 10000;
                 return true; // Indica victoria automática
             }
@@ -52,7 +52,7 @@ bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int
         }
 
     }
-    cout << nombreJugador << ": " << stockJugador << " dados, " << puntajeJugador << " pts" << endl << endl;
+    cout << nombreJugador << ": " << stockJugador << " dados, " << puntajeJugador << " puntos" << endl << endl;
     return false;
 }
 
@@ -94,7 +94,7 @@ int MainJuego(string &ganador, int &puntajeganador) {
     }
 
     // Juego principal: hasta 3 rondas o victoria automatica
-    while (contadorRondas <= 3 && !victoriaAutomatica) {
+    while (contadorRondas <= 3 && victoriaAutomatica == false) {
 
         cout << "Ronda " << contadorRondas << endl;
         if (turno == 0) {
@@ -108,6 +108,7 @@ int MainJuego(string &ganador, int &puntajeganador) {
         }
         contadorRondas++;
     }
+
     system ("pause");
     system ("cls");
     jugadorGanador(nombreJ1, nombreJ2, puntajeJ1, puntajeJ2, ganador, puntajeganador);

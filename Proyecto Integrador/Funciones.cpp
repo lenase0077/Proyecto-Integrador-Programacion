@@ -21,11 +21,11 @@ void generarTirada(int v[], int cant){
 
 void jugadorGanador(string nombreJ1,string  nombreJ2, int puntajeJ1,int puntajeJ2,string &ganador,int &puntajeganador){
     cout << "Fin de la partida" << endl;
-    cout << nombreJ1 << ": genero" << puntajeJ1 << " puntos" << endl;
-    cout << nombreJ2 << ": genero" << puntajeJ2 << " puntos" << endl;
+    cout << "El jugador " << nombreJ1 << ": genero " << puntajeJ1 << " puntos" << endl;
+    cout << "El jugador " << nombreJ2 << ": genero " << puntajeJ2 << " puntos" << endl;
 
     if (puntajeJ1 > puntajeJ2) {
-        cout << "Gana el jugador" << nombreJ1 << "!" << endl;
+        cout << "Gana el jugador " << nombreJ1 << "!" << endl;
         ganador=nombreJ1;
         puntajeganador=puntajeJ1;
 
