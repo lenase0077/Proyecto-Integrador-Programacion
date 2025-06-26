@@ -47,15 +47,31 @@ case 1:
     system ("cls");
     MainJuego(ganador,puntajeganador);
     break;
-case 2:
 
+
+
+case 2:
     system ("cls");
-    cout << "Estadisticas" << endl;
     estadisticas(ganador,puntajeganador);
     break;
+
+
+
 case 3:
 
     system ("cls");
+     cout << " _____ ______  _____ ______  _____  _____  _____  _____ \n";
+    cout << "/  __ \\| ___ \\|  ___||  _  \\|_   _||_   _||  _  |/  ___|\n";
+    cout << "| /  \\/| |_/ /| |__  | | | |  | |    | |  | | | |\\ `--. \n";
+    cout << "| |    |    / |  __| | | | |  | |    | |  | | | | `--. \\\n";
+    cout << "| \\__/\\| |\\ \\ | |___ | |/ /  _| |_   | |  \\ \\_/ //\\__/ /\n";
+    cout << " \\____/\\_| \\_|\\____/ |___/   \\___/   \\_/   \\___/ \\____/ \n";
+    cout << "                                                        \n";
+    cout << "                                                        \n";
+
+
+
+
     cout << "================= INFORMACION DEL GRUPO =================" << endl;
     cout << " " << endl;
     cout << "[ Grupo 11 ] " << endl;
