@@ -20,19 +20,20 @@ void generarTirada(int v[], int cant){
 }
 
 void jugadorGanador(string nombreJ1,string  nombreJ2, int puntajeJ1,int puntajeJ2,string &ganador,int &puntajeganador){
+
     cout << "Fin de la partida" << endl;
     cout << "El jugador " << nombreJ1 << ": genero " << puntajeJ1 << " puntos" << endl;
     cout << "El jugador " << nombreJ2 << ": genero " << puntajeJ2 << " puntos" << endl;
 
     if (puntajeJ1 > puntajeJ2) {
         cout << "Gana el jugador " << nombreJ1 << "!" << endl;
-        ganador=nombreJ1;
-        puntajeganador=puntajeJ1;
+        ganador = nombreJ1;
+        puntajeganador = puntajeJ1;
 
     } else if (puntajeJ2 > puntajeJ1) {
         cout << "Gana el jugador " << nombreJ2 << "!" << endl;
-       ganador=nombreJ2;
-       puntajeganador=puntajeJ2;
+       ganador = nombreJ2;
+       puntajeganador = puntajeJ2;
 
     } else {
         cout << "Empate" << endl;
@@ -73,7 +74,7 @@ int SumarTirada(int v[], int cant, int& DadosSeleccionados) {
                 contador += v[eleccion];
                 DadosSeleccionados++;
                 usados[eleccion] = true;
-                cout << "La suma actual es: " << contador << endl;
+                cout << "Suma seleccionada: " << contador << endl;
             } else {cout << "Ya usaste este dado, TRAMPOSO!" << endl;}
 
         } else {

@@ -34,7 +34,7 @@ bool jugarTurno(string nombreJugador, int& stockJugador, int& stockOponente, int
         stockJugador -= dadosUsados;
         stockOponente += dadosUsados;
 
-        cout << "Ganaste " << puntosGanados << " puntos." << endl;
+        cout << endl << "Tirada exitosa! Ganaste " << puntosGanados << " puntos." << endl;
         cout << "Transfieres " << dadosUsados << " dados al oponente." << endl;
 
             if (stockJugador == 0) {
@@ -85,14 +85,14 @@ int MainJuego(string &ganador, int &puntajeganador) {
         dado2 = tirarDado6Caras();
     } while (dado1 == dado2);
 
-    cout << endl << nombreJ1 << " tira: " << dado1 << endl;
-    cout << endl << nombreJ2 << " tira: " << dado2 << endl;
+    cout << endl << nombreJ1 << " Lanza un: " << dado1 << endl;
+    cout  << nombreJ2 << " Lanza un: " << dado2 << endl;
 
     if (dado1 > dado2) {
-        cout << endl << "El jugador " << nombreJ1 << " Comienza la partida:" << endl;
+        cout << endl << "El jugador " << nombreJ1 << " comienza la partida:" << endl;
         turno = 0;
     } else {
-        cout << endl << "El jugador " << nombreJ2 << " Comienza la partida:" << endl;
+        cout << endl << "El jugador " << nombreJ2 << " comienza la partida:" << endl;
         turno = 1;
     }
 
@@ -113,7 +113,8 @@ int MainJuego(string &ganador, int &puntajeganador) {
 
     system ("pause");
     system ("cls");
+
     jugadorGanador(nombreJ1, nombreJ2, puntajeJ1, puntajeJ2, ganador, puntajeganador);
-     return 0;
+    return 0;
 }
 

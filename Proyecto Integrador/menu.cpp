@@ -20,14 +20,17 @@ cout << endl << endl << endl;
 
 
 
-cout << "------ Menu Principal ------" << endl;
-cout << "1 - Jugar" << endl;
-cout << "2 - Tabla de Estadisticas" << endl;
-cout << "3 - Creditos" << endl;
-cout << "----------------------------" << endl;
-cout << "0 - Salir" << endl;
+cout << " +--------------------------------+" << endl;
+cout << " |          MENU PRINCIPAL        |" << endl;
+cout << " +--------------------------------+" << endl;
+cout << " | [1] Jugar                      |" << endl;
+cout << " | [2] Tabla de Estadisticas      |" << endl;
+cout << " | [3] Creditos                   |" << endl;
+cout << " | [0] Salir                      |" << endl;
+cout << " +--------------------------------+" << endl;
+cout << " Ingrese una opcion: ";
 
-cout << "Eliga una opcion: " << endl;
+
 cin >> opcion;
 while(opcion <0 || opcion >3){
     cout << "Opcion incorrecta"<<endl;
@@ -91,7 +94,7 @@ case 3:
     cout << "=========================================================" << endl;
     break;
 case 0:
-    cout << "¡Gracias por jugar!";
+    cout << endl << "Gracias por jugar!" << endl;
     break;
     }
 }
