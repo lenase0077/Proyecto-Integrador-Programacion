@@ -13,4 +13,4 @@ void mostrarTirada(int v[], int cant);
 int SumarTirada (int v[], int cant, int& DadosSeleccionados);
 void jugadorGanador(std::string nombreJ1, std::string nombreJ2, int puntajeJ1, int puntajeJ2,std::string &ganador, int &puntajeganador);
 void mostrarBannerEstadisticas();
-void titilar (std::string &ganador, int x, int y,int &puntajeganador);
+void titilar (std::string ganador, int x, int y,int puntajeganador);

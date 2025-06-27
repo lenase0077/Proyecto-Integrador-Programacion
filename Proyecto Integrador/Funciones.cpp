@@ -43,7 +43,7 @@ void jugadorGanador(string nombreJ1,string  nombreJ2, int puntajeJ1,int puntajeJ
         puntajeganador=-1;
     }
 }
-void titilar(string &ganador, int x, int y,int &puntajeganador){
+void titilar(string ganador, int x, int y,int puntajeganador){
     for (int i=1;i<10;i++){
 
             if(i%2==0){
